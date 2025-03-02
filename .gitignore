@@ -33,8 +33,14 @@ tramp
 .cask/
 dist/
 
+# ido files
+ido.last
+
 # Flycheck
 flycheck_*.el
+
+# smex
+smex-items
 
 # server auth directory
 /server/
