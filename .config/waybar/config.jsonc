@@ -25,7 +25,7 @@
     "hyprland/workspaces": {
          "all-outputs": true,
          "warp-on-scroll": true,
-	 "persistent-workspaces": { "HDMI-A-1" : [1, 2, 3, 4, 5] },
+	 "persistent-workspaces": { "*" : [1, 2, 3, 4, 5] },
 	 "format": " ",
 
      },
