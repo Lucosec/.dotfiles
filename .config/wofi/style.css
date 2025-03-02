@@ -1,0 +1,34 @@
+@import "../waybar/themes/mocha.css";
+
+* {
+    border-radius: 10;
+}
+
+#outer-box {
+    border: 2px solid #a6e3a1;
+}
+
+#input {
+    margin-top: 15;
+    margin-left: 15;
+    margin-right: 15;
+    margin-bottom: 5;
+}
+
+#inner-box {
+    margin: 15;
+}
+
+#unselected,
+#selected {
+    margin-top: 15;
+    margin-bottom: 15;
+}
+
+#text {
+    margin-left: 10;
+}
+
+#img {
+    margin-left: 10;
+}

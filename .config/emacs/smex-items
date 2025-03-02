@@ -1,0 +1,34 @@
+
+;; ----- smex-history -----
+(
+ sudo-edit
+ duplicate-line
+ list-packages
+ man
+ duplicate-dwim
+ line-number-mode
+ ert-kill-all-test-buffers
+)
+
+;; ----- smex-data -----
+(
+ (compile . 2)
+ (org-mode . 2)
+ (man . 7)
+ (org-cycle . 13)
+ (list-packages . 4)
+ (org-latex-export-to-pdf . 4)
+ (ox-report-export-to-pdf-and-open . 1)
+ (term . 2)
+ (org-html-export-as-html . 2)
+ (battery . 1)
+ (tetris . 2)
+ (scratch-buffer . 1)
+ (eww-open-file . 1)
+ (ert-kill-all-test-buffers . 1)
+ (gnus-group-kill-all-zombies . 1)
+ (duplicate-line . 4)
+ (line-number-mode . 2)
+ (duplicate-dwim . 3)
+ (sudo-edit . 5)
+)

@@ -1,0 +1,174 @@
+@import "themes/mocha.css";
+
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: Inter, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    margin-top: 1;
+    margin-bottom: 0;
+    padding-top: 2;
+    padding-bottom: 0;
+    border-radius: 10;
+}
+
+window#waybar {
+    background-color: transparent;
+    transition-property: background-color;
+    transition-duration: .2s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: #FFFFFF;
+}
+*/
+
+button {
+    /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: inset 0 -3px transparent;
+    /* Avoid rounded borders under each button name */
+    border: none;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+button:hover {
+}
+
+#workspaces button {
+    margin-right: 5px;
+    background-color: transparent;
+    color: @green;
+    opacity: 0.7;
+    border: 2px solid @green;
+    padding-right: 0;
+}
+
+#workspaces button:hover {
+    background-color: @green;
+    border: none;
+    opacity: 0.9;
+    padding-right: 8;
+}
+
+
+#workspaces button.active {
+    background-image: linear-gradient(30deg, @green 0%, @teal 100%);
+    opacity: 1;
+    padding-right: 20;
+    border: none;
+}
+
+#workspaces button.focused {
+   background-color: rgba(255, 255, 255, 0.8);
+}
+
+#window,
+#workspaces {
+    margin: 0 4px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 10px;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#custom-media {
+    min-width: 100px;
+}
+
+#custom-media.custom-spotify {
+    background-color: @surface1;
+    border-color: @green;
+    color: @green;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+}
+
+#clock,
+#cpu,
+#memory,
+#custom-media,
+#custom-weather,
+#custom-kernel,
+#tray {
+    padding-right: 12px;
+    padding-left: 12px;
+    margin-right: 2;
+    background-image: linear-gradient(30deg, @surface0 100%, @base 0%);
+    color: @text;
+    border-radius: 10;
+    border: 2px solid #111111
+}
+#custom-weather {
+   border-color: @yellow;
+   color: @yellow;
+}
+#custom-kernel {
+   border-color: @red;
+   color: @red;
+}
+#clock {
+   border-color: @flamingo;
+   color: @flaming;
+}
+#cpu {
+   border-color: @sapphire;
+   color: @sapphire;
+}
+#custom-media {
+   border-color: @lavender;
+   color: @lavender;
+}
+#memory {
+   border-color: @mauve;
+   color: @mauve;
+}
+#tray {
+   border-color: @peach;
+   color: @peach;
+}
+
+#custom-weather {
+    margin-left: 10;
+}
+#clock {
+    margin-right: 10;
+}
+
+#custom-kernel,
+#cpu,
+#tray,
+#memory {
+    padding-bottom: 4
+}
+

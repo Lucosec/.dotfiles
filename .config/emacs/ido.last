@@ -1,0 +1,89 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/etc/" . "modprobe.d/")
+ ("/home/lucas/Documentos/" . "wallpaper/")
+ ("/home/lucas/.local/" . "bin/")
+ ("/" . "mnt/")
+ ("/mnt/" . "BACKUP/")
+ ("/home/" . "lucas/")
+ ("/home/lucas/.config/" . "hypr/")
+ ("/home/lucas/" . ".config/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/lucas/"
+ "/home/lucas/.config/hypr/"
+ "/sudo:root@localhost:/etc/modprobe.d/"
+ "/home/lucas/.config/wofi/"
+ "/home/lucas/.config/waybar/"
+ "/home/lucas/.config/waybar/themes/"
+ "/home/lucas/.config/emacs/"
+ "/etc/modprobe.d/"
+ "/home/lucas/Documentos/"
+ "/home/lucas/Documentos/wallpaper/"
+ "/home/lucas/Downloads/"
+ "/home/lucas/.local/bin/"
+ "/mnt/BACKUP/Games/Grand Theft Auto V/"
+ "/mnt/BACKUP/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ ".bashrc"
+ "hyprland.conf"
+ "hyprlock.conf"
+ "config"
+ "style.css"
+ "config.jsonc"
+ "mocha.css"
+ "init.el"
+ "nvidia.conf"
+ "detran.org"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/lucas/" (26563 22657 657622 368000) ".gitconfig" ".bash_history" ".viminfo" ".bashrc" ".dotfiles/" ".steampid" ".steampath" "Games/" ".floorp/" ".authinfo" ".npm/" ".gtkrc-2.0" ".inputrc" ".cargo/" ".gnupg/" ".pulse-cookie" ".steam/" ".python_history" ".wget-hsts" ".zen/" ".nv/" ".android/" ".pki/" ".fonts.conf" ".mozilla/" ".var/" ".cache/" ".config/" "Vídeos/" "Imagens/" "Músicas/" "Documentos/" "Público/" "Modelos/" "Downloads/" "Área de trabalho/" ".local/" ".bash_profile" ".bash_logout" "../" "./")
+
+ ("/home/lucas/.config/hypr/" (26563 22401 591809 779000) "hyprland.conf" "hyprlock.conf" "themes/" "hyprpaper.conf" "wall.png" "../" "./")
+
+ ("/home/lucas/.config/" (26563 21776 29861 956000) "wofi/" "waybar/" "gtk-4.0/" "gtk-3.0/" "gtk-2.0/" "mako/" "hypr/" "emacs/" "btop/" "alacritty/" "okularrc" "kgetrc" "pavucontrol.ini" "Pinta/" "mypaint/" "unity3d/" "Thunar/" "kioslaverc" "systemmonitorrc" "QtProject.conf" "Kvantum/" "qt6ct/" "fragments/" "ibus/" "bluedevilglobalrc" "ksmserverrc" "plasma-org.kde.plasma.desktop-appletsrc" "kdeglobals" "Trolltech.conf" "gtkrc-2.0" "gtkrc" "kglobalshortcutsrc" "kwinrc" "filetypesrc" "mimeapps.list" "chromium/" "vivaldi/" "kconf_updaterc" "plasma-welcomerc" "systemd/" "scc/" "gedit/" "OpenRGB/" "pika-backup/" "borg/" "transmission/" "sauerbraten/" "discoverrc" "eog/" "xfce4/" "nautilus/" "gwenviewrc" "$MYVIMDIR/" "plasmashellrc" "go/" "nwg-look/" "glib-2.0/" "GIMP/" "obs-studio/" "hyprpanel/" "spotify/" "baloofileinformationrc" "kdeconnect/" "kwinrulesrc" "plasmarc" "plasmanotifyrc" "spectaclerc" "kcminputrc" "vlc/" "dolphinrc" "kwalletrc" "plasma.emojierrc" "pupgui/" "kactivitymanagerd-statsrc" "kcmfonts" "kded5rc" "kded6rc" "discord/" "Electron/" "wezterm/" "session/" "kfontinstuirc" "dconf/" "kxkbrc" "PlasmaUserFeedback" "powermanagementprofilesrc" "kactivitymanagerdrc" "KDE/" "kde.org/" "pulse/" "ktimezonedrc" "xsettingsd/" "libaccounts-glib/" "kwinoutputconfig.json" "baloofilerc" "plasma-localerc" "kdedefaults/" "user-dirs.locale" "user-dirs.dirs" "../" "./")
+
+ ("/etc/modprobe.d/" (26562 32861 769673 955000) "nvidia.conf" "nvidia.conf~" "../" "./")
+
+ ("/etc/" (26563 1690 424094 830000) "ld.so.cache" "resolv.conf" "shadow" "passwd" "gshadow" "group" "shadow-" "passwd-" "gshadow-" "group-" ".updated" "environment" "environment~" "java17-openjdk/" "texmf/" "openrgb/" "xml/" "hosts" "gimp/" "gtk-2.0/" "wgetrc" "login.defs" "vimrc" "sudo_logsrvd.conf" "sudo.conf" "rsyncd.conf" "smartd.conf" "man_db.conf" "slsh.rc" "ethertypes" "paperspecs" "papersize" "fuse.conf" "crontab" "cron.deny" "anacrontab" "gprofng.rc" "rc_maps.cfg" "vdpau_wrapper.cfg" "libva.conf" "signond.conf" "ts.conf" "xattr.conf" "sensors3.conf" "healthd.conf" "netconfig" "bindresvport.blacklist" "libaudit.conf" "krb5.conf" "request-key.conf" "mke2fs.conf" "e2scrub.conf" "bash.bashrc" "bash.bash_logout" "inputrc" "rpc" "gai.conf" "pacman.conf" "pacman.conf.bak" "pacman.conf.pacnew" "makepkg.conf.pacnew" "sddm.conf" "sddm.conf.d/" "fstab" "timeshift/" "sysconfig/" "cron.weekly/" "cron.monthly/" "cron.hourly/" "cron.daily/" "cron.d/" "paru.conf" "lsb-release" "libpaper.d/" "nginx/" "mime.types" "mailcap" "gtk-3.0/" "ModemManager/" "ppp/" "opt/" "chromium/" "cifs-utils/" "ostree-mkinitcpio.conf" "ostree/" "gdb/" "rc_keymaps/" "alsa/" "pipewire/" "dconf/" "plymouth/" "logrotate.d/" "UPower/" "udisks2/" "mdadm.conf" "libblockdev/" "pulse/" "libinput/" "avahi/" "fonts/" "bluetooth/" "localtime" "sudoers" "subgid" "subgid-" "subuid" "subuid-" "bash_completion.d/" "locale.conf" "locale.gen" "vconsole.conf" "hostname" "makepkg.conf" "os-release" "sudoers.d/" "grub.d/" "NetworkManager/" "wpa_supplicant/" "polkit-1/" "sensors.d/" "conf.d/" "dkms/" "mkinitcpio.d/" "mkinitcpio.conf.d/" "mkinitcpio.conf" "initcpio/" "iptables/" "libnl/" "makepkg.conf.d/" ".pwd.lock" "machine-id" "xdg/" "udev/" "tmpfiles.d/" "sysctl.d/" "ssh/" "kernel/" "cryptsetup-keys.d/" "credstore.encrypted/" "credstore/" "binfmt.d/" "X11/" "debuginfod/" "tpm2-tss/" "modules-load.d/" "gnutls/" "ca-certificates/" "systemd/" "pkcs11/" "default/" "modprobe.d/" "depmod.d/" "security/" "pam.d/" "audit/" "audisp/" "openldap/" "ssl/" "request-key.d/" "keyutils/" "skel/" "shells" "securetty" "profile.d/" "profile" "nsswitch.conf" "mtab" "ld.so.conf.d/" "ld.so.conf" "issue" "host.conf" "crypttab" "arch-release" "services" "protocols" "pacman.d/" "../" "./")
+
+ ("/home/lucas/.config/wofi/" (26562 32957 965200 498000) "#config#" "config" "config~" "style.css" "style.css~" "../" "./")
+
+ ("/home/lucas/.config/waybar/" (26563 843 366033 297000) "style.css" "style.css~" "config.jsonc" "config.jsonc~" "themes/" "mediaplayer.py" "../" "./")
+
+ ("/home/lucas/.config/waybar/themes/" (26559 61081 392943 167000) "mocha.css" "../" "./")
+
+ ("/home/lucas/.config/emacs/" (26562 21707 410096 306000) "ido.last" "ido.last~" "init.el" "init.el~" "#init.el#" "smex-items" "auto-save-list/" "eln-cache/" "elpa/" "../" "./")
+
+ ("/mnt/BACKUP/" (26561 52015 364197 573000) "lost+found/" ".Trash-1000/" "Games/" "./" "backup/" "../" "Downloads/" "SteamLibrary/")
+
+ ("/mnt/BACKUP/Games/Grand Theft Auto V/" (26562 17491 193790 26000) "x64n.rpf" "pfx.lock" "system.reg" "x64i.rpf" "GTAVLanguageSelect.exe" "x64k.rpf" "zlib1.dll" "x64v.rpf" "x64l.rpf" "steam_appid.txt" "lutris.json" "libcurl.dll" ".update-timestamp" "orig_socialclub.dll" "libtox.dll" "version" "GFSDK_TXAA_AlphaResolve.win64.dll" "x64d.rpf" "x64b.rpf" "BattlEye/" "x64q.rpf" "version.txt" "opus.dll" "reg255a0000.tmp" "x64c.rpf" "x64o.rpf" "x64a.rpf" "GFSDK_ShadowLib.win64.dll" "PlayGTAV.bat" "x64/" "x64g.rpf" "x64s.rpf" "userdef.reg" "tracked_files" "config_info" "GPUPerfAPIDX11-x64.dll" "pfx/" "steam_api64.dll.orig" "Redistributables/" "bink2w64.dll.orig" "GTA5_BE.exe" "x64f.rpf" "socialclub.dll" "update/" "x64u.rpf" "drive_c/" "NvPmApi.Core.win64.dll" "PlayGTAV.exe.orig" "./" "title.rgl" "installscript.vdf" "user.reg" "common.rpf" "bink2w64.dll" "installscript_sdk.vdf" "PlayGTAV.exe" "GTAVLauncher.exe" "GTA5.exe" "x64e.rpf" "steam_settings/" "../" "x64t.rpf" "x64w.rpf" "x64j.rpf" "launc.dll" "opusenc.dll" "GTA5.dxvk-cache" "fvad.dll" "steam_api64.dll" "GTA V Language Changer.exe" "d3dcsx_46.dll" "GLCache/" "dosdevices/" "d3dcompiler_46.dll" "x64m.rpf" "x64r.rpf" "x64p.rpf" "x64h.rpf" "GFSDK_TXAA.win64.dll")
+
+ ("/home/lucas/Documentos/wallpaper/" (26561 37087 764998 984000) "second-collection/" "screenshot.png" "parrot.png" "iphone.png" "first-collection/" "devuan.png" "big.png" "aosc.png" "README.md" "LICENSE" "INSTALL.md" ".github/" ".git/" "../" "./")
+
+ ("/home/lucas/Documentos/" (26561 52114 948189 267000) "detran.org" "detran.org~" "detran.pdf" "detran.tex" "index.html" "APOSTILA JX.pdf" "wallpaper/" "../" "./")
+
+ ("/home/lucas/.cache/" (26561 57828 81910 853000) "ksvg-elements" "plasma_theme_default.kcache" "krunner/" "ksycoca6_pt_vXBZpleT_EcvoBq5ud2DkjVYras=" "mesa_shader_cache_db/" "mesa_shader_cache/" "chromium/" "vivaldi/" "BraveSoftware/" "hugo_cache/" "org-persist/" "pip/" "plasma-systemmonitor/" "pika-backup/" "borg/" "starship/" "hyprland/" "g-ir-scanner/" "wofi-dmenu" "gnome-desktop-thumbnailer/" "tracker3/" "gstreamer-1.0/" "gtk-4.0/" "go-build/" "Hyprland Polkit Agent/" "gimp/" "gegl-0.4/" "babl/" "spotify/" "drkonqi/" "wofi-drun" "kitty/" "helix/" "kcmshell6/" "kscreenlocker_greet/" "zen/" "ksmserver-logout-greeter/" "protonfixes/" "plasma.emojier/" "umu/" "paru/" "lutris/" "polkit-kde-authentication-agent-1/" "bookmarksrunner/" "thumbnails/" "vim/" "spectacle/" "fontconfig/" "gtk-3.0/" "mozilla/" "mirrorstatus.json" "systemsettings/" "flatpak/" "org.kde.unitconversion/" "appstream/" "discover/" "KDE/" "plasmashell/" "event-sound-cache.tdb.0c9a0abf717c4cc3ab3e7bffc63dbbed.x86_64-pc-linux-gnu" "qtshadercache-x86_64-little_endian-lp64/" "ksplash/" "kwin/" "nvidia/" "kcrash-metadata/" "../" "./")
+
+ ("/home/lucas/.local/bin/" (26561 29954 805974 282000) "powermenu.sh" "powermenu.sh~" "../" "./")
+
+ ("/home/lucas/.local/" (26560 8194 477104 686000) "bin/" "state/" "share/" "../" "./")
+
+ ("/home/lucas/Downloads/" (26560 23750 149821 891000) "Street.jpg.~1~" "Street.jpg" "../" "./")
+
+ ("/mnt/" (26558 63944 780787 511000) "BACKUP/" "../" "./")
+
+ ("/home/" (26558 63505 755067 352000) "lucas/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
