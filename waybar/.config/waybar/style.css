@@ -13,10 +13,7 @@ window#waybar {
     color: @flamingo;
     transition-property: background-color;
     transition-duration: .2s;
-}
 
-window#waybar.hidden {
-    opacity: 0.2;
 }
 
 button {
@@ -32,36 +29,31 @@ button:hover {
 
 #workspaces button {
     background-color: transparent;
-    color: @green;
-    opacity: 0.5;
+    color: @surface2;
     padding-right: 5px;
     padding-left: 5px;
+    border-bottom: 2px solid @surface1;
 }
 
 #workspaces button:hover {
     border: none;
-    opacity: 0.9;
 }
 
 
 #workspaces button.active {
     background: @surface0;
     color: @green;
-    opacity: 1;
     border-bottom: 2px solid @green;
+    opacity: 1;
 }
 
 #workspaces button.focused {
    background-color: rgba(255, 255, 255, 0.8);
 }
 
-#window,
-#workspaces {
-}
-
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
-    margin-left: 3px;
+    margin-left: 0px;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
@@ -85,7 +77,6 @@ label:focus {
 }
 
 #custom-media.custom-spotify {
-    background-color: @surface1;
     border-color: @green;
     color: @green;
 }
@@ -109,6 +100,7 @@ label:focus {
     color: @text;
     padding-right: 10px;
     padding-left: 10px;
+    opacity: 1;
 }
 #custom-weather {
    border-color: @yellow;
@@ -123,7 +115,6 @@ label:focus {
 #clock {
    border-bottom: 2px solid @flamingo;
    color: @flamingo;
-   margin-right: 5px;
 }
 #cpu {
    border-bottom: 2px solid @sapphire;
