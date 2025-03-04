@@ -4,11 +4,11 @@
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: Inter, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
+    min-height: 0px;
     border-radius: 0px;
 }
 
 window#waybar {
-
     background-color: @base;
     color: @flamingo;
     transition-property: background-color;
