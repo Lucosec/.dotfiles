@@ -3,16 +3,14 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: Inter, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
-    margin-top: 1;
-    margin-bottom: 0;
-    padding-top: 2;
-    padding-bottom: 0;
-    border-radius: 10;
+    font-size: 14px;
+    border-radius: 0px;
 }
 
 window#waybar {
-    background-color: transparent;
+
+    background-color: @base;
+    color: @flamingo;
     transition-property: background-color;
     transition-duration: .2s;
 }
@@ -20,15 +18,6 @@ window#waybar {
 window#waybar.hidden {
     opacity: 0.2;
 }
-
-/*
-window#waybar.empty {
-    background-color: transparent;
-}
-window#waybar.solo {
-    background-color: #FFFFFF;
-}
-*/
 
 button {
     /* Use box-shadow instead of border so the text isn't offset */
@@ -42,27 +31,24 @@ button:hover {
 }
 
 #workspaces button {
-    margin-right: 5px;
     background-color: transparent;
     color: @green;
-    opacity: 0.7;
-    border: 2px solid @green;
-    padding-right: 0;
+    opacity: 0.5;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 #workspaces button:hover {
-    background-color: @green;
     border: none;
     opacity: 0.9;
-    padding-right: 8;
 }
 
 
 #workspaces button.active {
-    background-image: linear-gradient(30deg, @green 0%, @teal 100%);
+    background: @surface0;
+    color: @green;
     opacity: 1;
-    padding-right: 20;
-    border: none;
+    border-bottom: 2px solid @green;
 }
 
 #workspaces button.focused {
@@ -71,17 +57,16 @@ button:hover {
 
 #window,
 #workspaces {
-    margin: 0 4px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
-    margin-left: 10px;
+    margin-left: 3px;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
 .modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
+    margin-right: 0px;
 }
 
 @keyframes blink {
@@ -121,54 +106,41 @@ label:focus {
 #custom-weather,
 #custom-kernel,
 #tray {
-    padding-right: 12px;
-    padding-left: 12px;
-    margin-right: 2;
-    background-image: linear-gradient(30deg, @surface0 100%, @base 0%);
     color: @text;
-    border-radius: 10;
-    border: 2px solid #111111
+    padding-right: 10px;
+    padding-left: 10px;
 }
 #custom-weather {
    border-color: @yellow;
+   padding-top: 5px;
    color: @yellow;
+   border-bottom: 2px solid @yellow;
 }
 #custom-kernel {
-   border-color: @red;
+   border-bottom: 2px solid @red;
    color: @red;
 }
 #clock {
-   border-color: @flamingo;
-   color: @flaming;
+   border-bottom: 2px solid @flamingo;
+   color: @flamingo;
+   margin-right: 5px;
 }
 #cpu {
-   border-color: @sapphire;
+   border-bottom: 2px solid @sapphire;
    color: @sapphire;
 }
 #custom-media {
-   border-color: @lavender;
+   border-bottom: 2px solid @lavender;
    color: @lavender;
+   padding-top: 5px;
 }
 #memory {
-   border-color: @mauve;
+   border-bottom: 2px solid @mauve;
    color: @mauve;
 }
 #tray {
-   border-color: @peach;
+   border-bottom: 2px solid @peach;
    color: @peach;
+   padding-right: 5px;
+   padding-left: 5px;
 }
-
-#custom-weather {
-    margin-left: 10;
-}
-#clock {
-    margin-right: 10;
-}
-
-#custom-kernel,
-#cpu,
-#tray,
-#memory {
-    padding-bottom: 4
-}
-
