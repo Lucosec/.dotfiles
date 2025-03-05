@@ -9,6 +9,8 @@ auto-save-list
 tramp
 .\#*
 
+history
+
 # Org-mode
 .org-id-locations
 *_archive
