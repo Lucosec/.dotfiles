@@ -115,6 +115,7 @@ label:focus {
 #clock {
    border-bottom: 2px solid @flamingo;
    color: @flamingo;
+   margin-right: 4px;
 }
 #cpu {
    border-bottom: 2px solid @sapphire;
