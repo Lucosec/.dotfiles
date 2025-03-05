@@ -18,6 +18,18 @@ history
 # flymake-mode
 *_flymake.*
 
+/eln-cache/
+
+/transient/
+
+/tutorial/
+
+/url/
+
+/history
+
+/eshell/
+
 # eshell files
 /eshell/history
 /eshell/lastdir
