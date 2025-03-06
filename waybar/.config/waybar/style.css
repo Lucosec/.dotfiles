@@ -13,7 +13,6 @@ window#waybar {
     color: @flamingo;
     transition-property: background-color;
     transition-duration: .2s;
-
 }
 
 button {
@@ -41,7 +40,7 @@ button:hover {
 
 
 #workspaces button.active {
-    background: @surface0;
+    background: @surface1;
     color: @green;
     border-bottom: 2px solid @green;
     opacity: 1;

@@ -3,33 +3,35 @@
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 
-; Set font and background's opacity
+;; Set font and background's opacity
 (add-to-list 'default-frame-alist '(font . "JetBrains Mono Nerd Font-14"))
 (add-to-list 'default-frame-alist '(alpha-background . 90))
 
-; Some minor tweaks
+;; Some minor tweaks
 (tool-bar-mode 0)
 (menu-bar-mode 0)
 (scroll-bar-mode 0)
-
-; Enable padding
+(setq inhibit-startup-screen t)
+;; Enable padding
 (use-package spacious-padding
   :ensure t
   :init
   (spacious-padding-mode))
-
-; Enable better mini-buffer
+;; Enable support to edit elevated privileges files
+(use-package sudo-edit
+  :ensure t)
+;; Enable better mini-buffer
 (use-package vertico
   :ensure t
   :custom
   (vertico-cycle t)
   :init
   (vertico-mode))
-; Save history for the mini-buffer
+;; Save history for the mini-buffer
 (use-package savehist
   :init
   (savehist-mode))
-; Make the mini-buffer more descriptive
+;; Make the mini-buffer more descriptive
 (use-package marginalia
   :after vertico
   :ensure t
@@ -37,7 +39,7 @@
   (marginalia-annotators '(marginalia-annotators-heavy marginalia-annotators-light nil))
   :init
   (marginalia-mode))
-; Enable magit
+;; Enable magit
 (use-package magit
   :ensure t)
 ;; Enable prettier org-mode presentation
@@ -45,6 +47,13 @@
   :ensure t
   :config
   (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
+
+;; Add icons for dired
+(use-package all-the-icons-dired
+  :ensure t
+  :config
+
+  (add-hook 'dired-mode-hook 'all-the-icons-dired-mode))
 
 ;; Use customizable the Modus Themes
 (use-package modus-themes
@@ -54,7 +63,7 @@
 	modus-themes-bold-constructs nil)
   (setq modus-vivendi-palette-overrides
 	'(
-	  ; fg common colors
+	  ;; fg common colors
 	  (red             "#f38ba8")
 	  (red-warmer      "#f38ba8")
 	  (red-cooler      "#cba6f7")
@@ -85,7 +94,7 @@
 	  (cyan-cooler     "#89b4fa")
 	  (cyan-faint      "#b4befe")
 	  (cyan-intense    "#94e2d5")
-	  ; bg common colors
+	  ;; bg common colors
 	  (bg-red-intense     "#6c7086")
 	  (bg-green-intense   "#6c7086")
 	  (bg-yellow-intense  "#6c7086")
@@ -108,7 +117,7 @@
 	  (bg-cyan-nuanced    "#45475a")
 
 
-	  ;; basic values
+	  ;;;; basic values
 	  (bg-main          "#1e1e2e")
 	  (bg-dim           "#181825")
 	  (fg-main          "#cdd6f4")
@@ -118,7 +127,7 @@
 	  (bg-inactive      "#181825")
 	  (border           "#1e1e2e")
 
-	  ;; Special purpose
+	  ;;;; Special purpose
 	  (bg-mode-line-active "#181825")
 	  (fg-mode-line-active "#7f849c")
 	  (border-mode-line-active "#181825")
@@ -149,7 +158,7 @@
 
   (setq modus-operandi-palette-overrides
 	'(
-	  ; fg common colors
+	  ;; fg common colors
 	  (red             "#d20f39")
 	  (red-warmer      "#d20f39")
 	  (red-cooler      "#8839ef")
@@ -181,7 +190,7 @@
 	  (cyan-faint      "#7287fd")
 	  (cyan-intense    "#179299")
 
-					; bg common colors
+	  ;; bg common colors
 	  (bg-red-intense     "#ccd0da")
 	  (bg-green-intense   "#ccd0da")
 	  (bg-yellow-intense  "#ccd0da")
@@ -244,20 +253,4 @@
   (load-theme 'modus-vivendi t) 
   (define-key global-map (kbd "<f5>") #'modus-themes-toggle))
 
-(use-package all-the-icons-dired
-  :ensure t
-  :config
-  ;; Add icons for dired
-  (add-hook 'dired-mode-hook 'all-the-icons-dired-mode))
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages nil))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+
