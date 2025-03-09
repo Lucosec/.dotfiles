@@ -5,13 +5,14 @@
 
 ;; Set font and background's opacity
 (add-to-list 'default-frame-alist '(font . "JetBrains Mono Nerd Font-14"))
-(add-to-list 'default-frame-alist '(alpha-background . 90))
+;(add-to-list 'default-frame-alist '(alpha-background . 90))
 
 ;; Some minor tweaks
 (tool-bar-mode 0)
 (menu-bar-mode 0)
 (scroll-bar-mode 0)
 (setq inhibit-startup-screen t)
+
 ;; Enable padding
 (use-package spacious-padding
   :ensure t
@@ -43,6 +44,7 @@
 (use-package magit
   :ensure t)
 ;; Enable prettier org-mode presentation
+(use-package org-bullets :ensure t)
 (use-package org
   :ensure t
   :config
@@ -249,8 +251,22 @@
 	  (bg-tab-other    "#acb0be")
 	  )
 	)
-
+;  (setq modus-vivendi-palette-overrides nil)
   (load-theme 'modus-vivendi t) 
   (define-key global-map (kbd "<f5>") #'modus-themes-toggle))
 
 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   '(all-the-icons-dired magit marginalia modus-themes org-bullets
+			 spacious-padding sudo-edit vertico)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

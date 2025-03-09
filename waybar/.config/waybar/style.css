@@ -2,7 +2,7 @@
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: Inter, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: Nerd Font, Inter, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
     min-height: 0px;
     border-radius: 0px;
@@ -31,16 +31,21 @@ button:hover {
     color: @surface2;
     padding-right: 5px;
     padding-left: 5px;
+    border-bottom: 2px solid @surface2;
+}
+
+#workspaces button.empty {
+    color: @surface1;
     border-bottom: 2px solid @surface1;
+    opacity: 1;
 }
 
 #workspaces button:hover {
     border: none;
 }
 
-
-#workspaces button.active {
-    background: @surface1;
+#workspaces button.visible {
+    background: @surface0;
     color: @green;
     border-bottom: 2px solid @green;
     opacity: 1;
@@ -103,7 +108,7 @@ label:focus {
 }
 #custom-weather {
    border-color: @yellow;
-   padding-top: 5px;
+   padding-top: 1px;
    color: @yellow;
    border-bottom: 2px solid @yellow;
 }
@@ -112,9 +117,10 @@ label:focus {
    color: @red;
 }
 #clock {
-   border-bottom: 2px solid @flamingo;
-   color: @flamingo;
-   margin-right: 4px;
+    padding-top: 1px;
+    border-bottom: 2px solid @flamingo;
+    color: @flamingo;
+    margin-right: 4px;
 }
 #cpu {
    border-bottom: 2px solid @sapphire;
@@ -123,7 +129,6 @@ label:focus {
 #custom-media {
    border-bottom: 2px solid @lavender;
    color: @lavender;
-   padding-top: 5px;
 }
 #memory {
    border-bottom: 2px solid @mauve;
