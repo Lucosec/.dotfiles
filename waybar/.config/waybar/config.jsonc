@@ -18,7 +18,7 @@
         "custom/kernel",
         "cpu",
         "memory",
-	"custom/weather",
+//	"custom/weather",
         "clock",
     ],
     "hyprland/workspaces": {

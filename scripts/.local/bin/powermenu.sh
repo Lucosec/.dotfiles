@@ -1,6 +1,6 @@
 #!/bin/sh
 
-OPTION=$(printf "󰩈   Logoff\n⏻   Shutdown\n   Reboot\n󰤁   Suspend\n   Hibernate\n" | wofi --show dmenu)
+OPTION=$(printf "󰩈   Logoff\n   Shutdown\n   Reboot\n󰤁   Suspend\n   Hibernate\n" | wofi --show dmenu)
 
 if [[ $(echo $OPTION | grep Logoff) ]]; then
     hyprctl dispatch exit

@@ -1,0 +1,25 @@
+#!/bin/sh
+
+if [[ -z "${WALLPAPERS}" ]]; then
+    printf "ERROR: WALLPAPERS variable is not set. Exiting...\n"
+    exit 1
+else
+    find $WALLPAPERS/* | shuf | nsxiv -t -i -o | head -n 1 | xargs -i{} wal -i {}
+
+    # Captura o caminho do wallpaper atual
+    wallpaper_path=$(<~/.cache/wal/wal)
+
+    # Extrai a extensão do arquivo (ex: jpg, png)
+    extension="${wallpaper_path##*.}"
+
+    # Define o caminho do link simbólico
+    link_path="$HOME/.config/wal/wal.$extension"
+
+    # Cria o diretório ~/.config/wal se não existir
+    mkdir -p "$HOME/.config/wal"
+
+    # Cria o link simbólico
+    ln -sf "$wallpaper_path" "$link_path"
+    
+fi	
+

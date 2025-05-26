@@ -1,13 +1,1 @@
-# Colors
-
-background-color=#1e1e2e
-text-color=#cdd6f4
-border-color=#a6e3a1
-progress-color=over #313244
-
-border-radius=8
-default-timeout=3000
-text-alignment=center
-
-[urgency=high]
-border-color=#fab387
+/home/lucas/.cache/wal/colors-mako

@@ -1,18 +1,19 @@
-@import "themes/mocha.css";
+@import "../../.cache/wal/colors-waybar.css";
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: Nerd Font, Inter, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: Nerd Font, Inter, FontAwesome, Roboto, Helvetica, Arial, sans-serif, Noto;
     font-size: 14px;
     min-height: 0px;
     border-radius: 0px;
 }
 
 window#waybar {
-    background-color: @base;
-    color: @flamingo;
+    background-color: @background;
+    color: @foreground;
     transition-property: background-color;
     transition-duration: .2s;
+    opacity: 0.85;
 }
 
 button {
@@ -28,16 +29,14 @@ button:hover {
 
 #workspaces button {
     background-color: transparent;
-    color: @surface2;
+    color: @color3;
     padding-right: 5px;
     padding-left: 5px;
-    border-bottom: 2px solid @surface2;
 }
 
 #workspaces button.empty {
-    color: @surface1;
-    border-bottom: 2px solid @surface1;
-    opacity: 1;
+    color: @color3;
+    opacity: 0.5;
 }
 
 #workspaces button:hover {
@@ -45,9 +44,8 @@ button:hover {
 }
 
 #workspaces button.visible {
-    background: @surface0;
-    color: @green;
-    border-bottom: 2px solid @green;
+    background: @color3;
+    color: @background;
     opacity: 1;
 }
 
@@ -80,11 +78,6 @@ label:focus {
     min-width: 100px;
 }
 
-#custom-media.custom-spotify {
-    border-color: @green;
-    color: @green;
-}
-
 #tray > .passive {
     -gtk-icon-effect: dim;
 }
@@ -101,42 +94,21 @@ label:focus {
 #custom-weather,
 #custom-kernel,
 #tray {
-    color: @text;
+    color: @color3;
+    border-bottom: 3px solid @color3;
     padding-right: 10px;
     padding-left: 10px;
     opacity: 1;
 }
 #custom-weather {
-   border-color: @yellow;
    padding-top: 1px;
-   color: @yellow;
-   border-bottom: 2px solid @yellow;
-}
-#custom-kernel {
-   border-bottom: 2px solid @red;
-   color: @red;
 }
 #clock {
-    padding-top: 1px;
-    border-bottom: 2px solid @flamingo;
-    color: @flamingo;
     margin-right: 4px;
 }
-#cpu {
-   border-bottom: 2px solid @sapphire;
-   color: @sapphire;
-}
-#custom-media {
-   border-bottom: 2px solid @lavender;
-   color: @lavender;
-}
-#memory {
-   border-bottom: 2px solid @mauve;
-   color: @mauve;
-}
 #tray {
-   border-bottom: 2px solid @peach;
-   color: @peach;
    padding-right: 5px;
    padding-left: 5px;
 }
+
+

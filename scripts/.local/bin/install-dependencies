@@ -1,7 +1,15 @@
 #!/bin/sh
 
-[[ -e /usr/bin/paru ]] || printf "\nERROR: Paru not found\n" || exit 1
+if [[ -e /usr/bin/paru ]]; then
+    printf "Paru is already installed. Proceeding installation of dependencies...\n"
+else
+    printf "Paru is not installed. Installing paru...\n"
+    sudo pacman -S --needed --noconfirm git base-devel
+    git clone https://aur.archlinux.org/paru-bin /tmp/paru-bin
+    sh -c "cd /tmp/paru-bin && makepkg -fsri"
+    printf "Paru has been successfully installed! Proceeding with the installation of the dependencies...\n"
+fi
 
-paru -S --needed qt5-wayland wl-clipboard xdg-desktop-portal-hyprland hyprpolkitagent hyprlock hypridle hyprland kitty nwg-look slurp mako emacs-wayland hyprpaper waybar openrgb grim slurp pavucontrol zen-browser-bin nautilus scrcpy gamescope wofi hyprutils eza bat fastfetch starship dconf-editor papirus-icon-theme
+paru -S --needed zsh zsh-completions zsh-syntax-highlighting stow playerctl python-pywal16 swaybg nsxiv qt5-wayland wl-clipboard xdg-desktop-portal-hyprland hyprpolkitagent hyprlock hypridle hyprland kitty nwg-look slurp mako emacs-wayland waybar openrgb grim slurp pavucontrol zen-browser-bin nautilus scrcpy gamescope wofi hyprutils eza bat fastfetch starship dconf-editor papirus-icon-theme noto-fonts noto-fonts-emoji noto-fonts-cjk
 
 [[ $? -eq 0 ]] && printf "\nSUCCESS!\n" && exit 1

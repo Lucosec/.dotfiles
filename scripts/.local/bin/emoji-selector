@@ -1,0 +1,7 @@
+#!/bin/sh
+
+emoji=$(cat $HOME/.local/bin/emojis | wofi --show dmenu | awk '{printf $1}') 
+
+[[ -n "$emoji" ]] && wl-copy $emoji && notify-send " $emoji was copied to the clipboard! "
+
+

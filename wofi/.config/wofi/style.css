@@ -1,11 +1,13 @@
-@import "../waybar/themes/mocha.css";
+@import "/home/lucas/.cache/wal/colors-waybar.css";
 
 * {
-    border-radius: 10;
+
+    background-color: @background;
+    color: @color6;
 }
 
 #outer-box {
-    border: 2px solid #a6e3a1;
+    border: 2px solid @color3;
 }
 
 #input {

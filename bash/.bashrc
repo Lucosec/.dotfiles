@@ -18,4 +18,7 @@ PS1='[\u@\h \W]\$ '
 export PATH=$PATH:$HOME/.local/bin
 
 fastfetch -c neofetch
+
 eval -- "$(/usr/bin/starship init bash --print-full-init)"
+
+
