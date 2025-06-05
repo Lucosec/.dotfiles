@@ -13,7 +13,6 @@ window#waybar {
     color: @foreground;
     transition-property: background-color;
     transition-duration: .2s;
-    opacity: 0.85;
 }
 
 button {
@@ -101,7 +100,6 @@ label:focus {
     opacity: 1;
 }
 #custom-weather {
-   padding-top: 1px;
 }
 #clock {
     margin-right: 4px;

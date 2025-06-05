@@ -15,6 +15,7 @@ autoload -Uz compinit && compinit
 
 alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias remove-orphans='sudo pacman -Qdtq | sudo pacman -Rns -'
+alias update='paru -Syu && flatpak update -y'
 
 alias ls='eza --color=auto'
 alias ll='eza -lh --color=auto'

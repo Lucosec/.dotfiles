@@ -18,7 +18,7 @@
         "custom/kernel",
         "cpu",
         "memory",
-//	"custom/weather",
+	"custom/weather",
         "clock",
     ],
     "hyprland/workspaces": {
@@ -54,8 +54,9 @@
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
     "custom/weather": {
-        "exec": "curl wttr.in/?format=1",
-        "escape": true	
+        "exec": "$HOME/.local/bin/weather",
+	"format": "󰅟   {text}",
+	"escape": true	
     },
     "custom/kernel": {
         "exec": "uname -r",
