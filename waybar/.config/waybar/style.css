@@ -86,6 +86,10 @@ label:focus {
     background-color: #eb4d4b;
 }
 
+#mpd,
+#custom-previous,
+#custom-playing,
+#custom-next,
 #clock,
 #cpu,
 #memory,
@@ -97,16 +101,15 @@ label:focus {
     border-bottom: 3px solid @color3;
     padding-right: 10px;
     padding-left: 10px;
+    margin-right: 4px;
     opacity: 1;
 }
-#custom-weather {
+
+#custom-previous,
+#custom-playing,
+#custom-next {
+    margin-right: 0px;
 }
-#clock {
-    margin-right: 4px;
-}
-#tray {
-   padding-right: 5px;
-   padding-left: 5px;
-}
+
 
 
