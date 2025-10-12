@@ -42,7 +42,7 @@
         "tooltip": false
     },
     "memory": {
-        "format": "   {}%"
+        "format": "  {}%"
     },
     "custom/media": {
         "format": "{icon} {text}",
@@ -67,7 +67,7 @@
         "escape": true	
     },
     "mpd": {
-        "format": "{artist} - {title} ( {elapsedTime:%M:%S} / {totalTime:%M:%S} )",
+        "format": "  {artist} - {title} ( {elapsedTime:%M:%S} / {totalTime:%M:%S} )",
 	"format-stopped": "",
        	"interval": 1
     },

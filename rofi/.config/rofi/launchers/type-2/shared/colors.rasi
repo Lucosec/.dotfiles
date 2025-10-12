@@ -16,3 +16,4 @@
 /* Import color-scheme from `colors` directory */
 
 @import "~/.cache/wal/colors-rofi.rasi"
+

@@ -2,7 +2,7 @@
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: Nerd Font, Inter, FontAwesome, Roboto, Helvetica, Arial, sans-serif, Noto;
+    font-family: 'Nerd Font';
     font-size: 14px;
     min-height: 0px;
     border-radius: 0px;
@@ -28,7 +28,7 @@ button:hover {
 
 #workspaces button {
     background-color: transparent;
-    color: @color3;
+    color: @color4;
     padding-right: 5px;
     padding-left: 5px;
 }
@@ -43,7 +43,7 @@ button:hover {
 }
 
 #workspaces button.visible {
-    background: @color3;
+    background: @color4;
     color: @background;
     opacity: 1;
 }
@@ -97,19 +97,24 @@ label:focus {
 #custom-weather,
 #custom-kernel,
 #tray {
-    color: @color3;
-    border-bottom: 3px solid @color3;
+    color: @color4;
+    border-bottom: 3px solid @color4;
     padding-right: 10px;
     padding-left: 10px;
     margin-right: 4px;
     opacity: 1;
 }
 
+
+#mpd,
 #custom-previous,
 #custom-playing,
 #custom-next {
     margin-right: 0px;
 }
 
+#custom-previous {
+    padding-left: 4px;
+}
 
 

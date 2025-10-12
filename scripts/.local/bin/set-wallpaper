@@ -20,6 +20,5 @@ else
 
     # Cria o link simbólico
     ln -sf "$wallpaper_path" "$link_path"
-    
 fi	
 
