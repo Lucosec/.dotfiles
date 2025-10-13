@@ -57,6 +57,19 @@
 
   (add-hook 'dired-mode-hook 'all-the-icons-dired-mode))
 
+;; Typescript mode
+(use-package qml-mode
+  :after lsp-mode
+  :config
+  (add-to-list 'lsp-language-id-configuration '(qml-ts-mode . "qml-ts"))
+  (lsp-register-client
+   (make-lsp-client :new-connection (lsp-stdio-connection '("qmlls"))
+                    :activation-fn (lsp-activate-on "qml-ts")
+                    :server-id 'qmlls))
+  (add-hook 'qml-ts-mode-hook (lambda ()
+                                (setq-local electric-indent-chars '(?\n ?\( ?\) ?{ ?} ?\[ ?\] ?\; ?,))
+                                (lsp-deferred))))
+
 ;; Use customizable the Modus Themes
 (use-package modus-themes
   :ensure t
@@ -268,7 +281,7 @@
      default))
  '(package-selected-packages
    '(all-the-icons-dired magit marginalia modus-themes org-bullets
-			 spacious-padding sudo-edit vertico)))
+			 qml-mode spacious-padding sudo-edit vertico)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
