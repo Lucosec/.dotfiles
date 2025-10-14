@@ -9,7 +9,8 @@
     "reload_style_on_change": true,
     "modules-left": [
         "hyprland/workspaces",
-    ],
+        "niri/workspaces",
+],
     "modules-center": [
 	"mpd",
 	"custom/previous",

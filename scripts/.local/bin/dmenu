@@ -4,4 +4,4 @@ dir="$HOME/.config/rofi/launchers/type-2"
 theme='style-2'
 flags="-no-case-sensitive -theme ${dir}/${theme}.rasi" 
 
-[[ -z $1 ]] && rofi -dmenu $flags || rofi -show $1 $flags
+[[ -z $1 ]] && rofi -dmenu $flags || [[ -z $1 ]] || rofi -show $1 $flags
