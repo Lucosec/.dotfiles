@@ -77,8 +77,10 @@ run_cmd() {
 		i3-msg exit
 	    elif [[ "$DESKTOP_SESSION" == 'plasma' ]]; then
 		qdbus org.kde.ksmserver /KSMServer logout 0 0 0
-	    elif [[ "$XDG_SESSION_DESKTOP" == 'Hyprland' || "$XDG_SESSION_DESKTOP" == "niri" ]]; then
+	    elif [[ "$XDG_SESSION_DESKTOP" == 'Hyprland' ]]; then
 		pkill -U $USER
+	    elif [[ "$XDG_SESSION_DESKTOP" == 'niri' ]]; then
+		niri msg action quit
 	    fi
 	fi
     else

@@ -5,3 +5,7 @@ theme='style-2'
 flags="-no-case-sensitive -theme ${dir}/${theme}.rasi" 
 
 [[ -z $1 ]] && rofi -dmenu $flags || [[ -z $1 ]] || rofi -show $1 $flags
+
+
+
+

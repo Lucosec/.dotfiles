@@ -4,7 +4,10 @@ if [[ -z "${WALLPAPERS}" ]]; then
     printf "ERROR: WALLPAPERS variable is not set. Exiting...\n"
     exit 1
 else
-    find $WALLPAPERS/* | shuf | nsxiv -t -i -o | head -n 1 | xargs -i{} wal -i {}
+    find $WALLPAPERS/* | shuf | nsxiv -t -i -o | head -n 1 | xargs -i{} wal --contrast 1.3 -i {}
+
+    # Deleta wallpapers antigos
+    rm ~/.config/wal/wal.*
 
     # Captura o caminho do wallpaper atual
     wallpaper_path=$(<~/.cache/wal/wal)

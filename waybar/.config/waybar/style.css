@@ -28,14 +28,13 @@ button:hover {
 
 #workspaces button {
     background-color: transparent;
-    color: @color3;
+    color: @color4;
     padding-right: 5px;
     padding-left: 5px;
-    opacity: 0.5;
 }
 
 #workspaces button.empty {
-    color: @color3;
+    color: @color4;
     opacity: 0.5;
 }
 
@@ -44,7 +43,7 @@ button:hover {
 }
 
 #workspaces button.focused {
-    background-color: @color3;
+    background-color: @color4;
     color: @background;
     opacity: 1;
 }

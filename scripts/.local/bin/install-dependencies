@@ -3,7 +3,6 @@
 
 
 arch() {
-
     if [[ -e /usr/bin/paru ]]; then
 	printf "Paru is already installed. Proceeding installation of dependencies...\n"
     else
@@ -17,9 +16,6 @@ arch() {
     paru -S --needed rofi-wayland zsh zsh-completions zsh-syntax-highlighting stow playerctl python-pywal16 swaybg nsxiv qt5-wayland wl-clipboard xdg-desktop-portal-hyprland xdg-desktop-portal-gtk udiskie hyprpolkitagent hyprlock hypridle hyprland kitty nwg-look slurp mako emacs-wayland waybar openrgb grim slurp pavucontrol zen-browser-bin nautilus scrcpy gamescope wofi hyprutils eza bat fastfetch starship dconf-editor papirus-icon-theme noto-fonts noto-fonts-emoji noto-fonts-cjk adw-gtk-theme ncmpcpp mpd mpc thunar
 
 }
-
-#fedora() {
-#}
 
 arch
 
